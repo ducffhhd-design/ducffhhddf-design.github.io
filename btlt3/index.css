@@ -1,0 +1,162 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.logo span {
+    color: #3498db;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+nav a.active, nav a:hover {
+    color: #3498db;
+}
+
+nav a.btn-upload {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Bộ lọc */
+.filter-section {
+    background-color: #2c3e50;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.filter-box {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-box input, .filter-box select {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filter-box input {
+    flex: 2;
+}
+
+.filter-box select {
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Danh sách tài liệu Grid */
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-bottom: 5px;
+}
+
+/* Thẻ tài liệu (Card) */
+.doc-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+}
+
+.doc-tag {
+    background: #e1f0fa;
+    color: #3498db;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.doc-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.doc-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.doc-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+.view-count {
+    font-size: 13px;
+    color: #999;
+}
+
+.btn-download {
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}

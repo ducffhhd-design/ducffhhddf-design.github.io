@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyNotes - Chia sẻ tài liệu học tập</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Thanh điều hướng -->
+    <header>
+        <div class="container header-box">
+            <h1 class="logo">Study<span>Notes</span></h1>
+            <nav>
+                <a href="#" class="active">Trang chủ</a>
+                <a href="#">Tài liệu của tôi</a>
+                <a href="#" class="btn-upload">Đăng tải +</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bộ lọc & Tìm kiếm -->
+    <section class="filter-section">
+        <div class="container filter-box">
+            <input type="text" id="search-input" placeholder="Nhập tên tài liệu cần tìm...">
+            
+            <select id="subject-filter">
+                <option value="">Tất cả môn học</option>
+                <option value="toan-cao-cap">Toán cao cấp</option>
+                <option value="lap-trinh-c">Lập trình C++</option>
+                <option value="co-so-du-lieu">Cơ sở dữ liệu</option>
+            </select>
+
+            <select id="year-filter">
+                <option value="">Tất cả năm học</option>
+                <option value="2024-2025">2024-2025</option>
+                <option value="2025-2026">2025-2026</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Danh sách tài liệu -->
+    <main class="container">
+        <h2>Tài liệu nổi bật</h2>
+        <div class="document-grid" id="document-list">
+            <!-- Dữ liệu mẫu sẽ được render bằng Javascript ở đây -->
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
